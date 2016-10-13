@@ -1,0 +1,61 @@
+# Site settings
+title:       ZhangPj
+email:       
+author:      zhangpj
+description: "ZhangPj's personal blog."
+baseurl:     ""
+url:         "http://zhangpj.name"
+date_format: "%b %-d, %Y"
+
+# Optional features
+animated:             false
+show_related_posts:   true
+show_post_footers:    true
+show_social_icons:    true
+enable_mathjax: true
+extended_fonts: true
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: zhangpj
+
+# Social icons
+github_username: zhangpj
+bitbucket_username:
+stackoverflow_id:
+twitter_username:
+skype_username:
+steam_nickname:
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+  og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
+sass:
+  compressed: true
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude: [vendor]
