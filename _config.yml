@@ -1,8 +1,9 @@
 # Site settings
-title:       ZhangPj
+title:       HeArt
 email:       
 author:      zhangpj
-description: "ZhangPj's personal blog."
+avatar:      "https://avatars2.githubusercontent.com/u/17241079?v=3&s=400"
+description: "zhangpj's personal blog."
 baseurl:     ""
 url:         "http://zhangpj.name"
 date_format: "%b %-d, %Y"
@@ -40,7 +41,6 @@ text:
     older: 'Older'
   post:
     updated:        'Updated'
-    minute_read:    'minute read'
     related_posts:  'Related Posts'
   index:
     coming_soon: 'Coming soon...'

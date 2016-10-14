@@ -51,9 +51,8 @@ summary: 坂本真绫声音真好听。
 
 把这些部分组合起来，就得到了如下的 Learning Diagram：
 
-<p align="center">
-<img src="/images/learning-diagram.png" alt="Learning Diagram">
-</p>
+{: .center}
+![Learning Diagram]({{ site.baseurl }}/images/learning-diagram.png)
 
 我们从未知的目标函数中获得了一定量的数据，将这些数据放入机器学习算法中（图中的 Learning Algorithm），算法从 Hypothesis Set 里选出一个最好的作为 Final Hypothesis，使得我们可以对新的数据获得最接近真实情况的预测，这就是机器学习的大体上的流程。其中，Learning Algorithm 和 Hypothesis Set 合称机器学习模型。
 
@@ -84,9 +83,8 @@ $$
 - 从中选出一个分错了的数据：$sign(\mathbf{w}^T\mathbf{x}_n) \neq y_n$;
 - 更新 $\mathbf{w}$: $\mathbf{w} \leftarrow \mathbf{w} + y_n\mathbf{x}_n$
 
-<p align="center">
-<img src="/images/pla.png" alt="Perceptron Learning Algorithm">
-</p>
+{: .center}
+![Perceptron Learning Algorithm]({{ site.baseurl }}/images/pla.png)
 
 然后对这个非常 Naive 的算法我有一个 Naive 的实现，有兴趣的可以看一下：[PLA.py](https://github.com/zhangpj/learning-from-data/blob/master/pymodels/PLA.py)。不过这个算法除了写作业和上课之外貌似真的没什么用……
 
@@ -107,9 +105,10 @@ $$
 式中 $\nu$ 是样本中某一类型的出现的频率，$\mu$ 则是该类型出现的概率，$\epsilon$ 是我们设定的错误阈值，$N$是样本容量。那么这个和机器学习有什么关系？
 
 首先我们要对之前的 Learning Diagram 加上一部分：
-<p align="center">
-<img src="/images/learning-diagram-2.png">
-</p>
+
+{: .center}
+![Learning Diagram - Updated]({{ site.baseurl }}/images/learning-diagram-2.png)
+
 我们的样本 $\mathbf{X}$ 是从一个概率分布中产生的，但是我们不需要知道这个分布是什么。所以这是一个非常宽松、合理的假设，不会影响结论的一般性。
 
 现在我们考虑一个类比实验：
@@ -126,9 +125,8 @@ $$
 - 我们从里面选出了 N 个数据，作为我们的一个样本，样本中两种颜色的数量我们可以知道；
 - 根据 Hoeffding 不等式，我们的 Hypothesis 在这个样本中的错误率（红色数据的频率）等于其在总体中的错误率是 P.A.C.的。
 
-<p align="center">
-<img src="/images/bin.png" alt="Marble Bin Experiment">
-</p>
+{: .center}
+![Marble Bin Experiment]({{ site.baseurl }}/images/bin.png)
 
 也就是说，如果我们有一个 Hypothesis，它在我们的样本中表现很好，那么我们就可以信任它，认为它是接近真实的目标函数的。
 
@@ -136,9 +134,8 @@ $$
 
 从 Hypothesis Set 中选一个出来，可以类比为我们有多个完全一样的罐子（里面的石头也是完全一样的），每个罐子分一个我们 Hypothesis Set 里的 Hypothesis，对里面的石头涂色，并选出一个样本:
 
-<p align="center">
-<img src="/images/multibin.png" alt="Multiple Marble Bins Experiment">
-</p>
+{: .center}
+![Multiple Marble Bins Experiment]({{ site.baseurl }}/images/multibin.png)
 
 虽然对于每一个罐子来说，我们选出的样本中红色石头出现的频率 $E_{in}$ 与罐子里所有的红石头的频率 $E_{out}$ （或者可以说是概率，因为罐子里是石头的总体）相差很大是一个小概率事件（样本量足够的情况下），但如果我们有好多好多 Hypothesis，“其中至少一个 $E_{in}$ 与 $E_{out}$ 差别很大”就不再是一个小概率事件了，如果我们的算法正好选到了这样一个 Hypothesis，可以说我们的机器学习就失败了。
 
