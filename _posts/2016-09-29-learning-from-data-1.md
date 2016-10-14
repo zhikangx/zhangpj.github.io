@@ -6,8 +6,6 @@ categories: ML
 summary: 坂本真绫声音真好听。
 ---
 
-<del>坂本真绫声音真好听。</del>
-
 最近我买了 Yaser S. Abu-Mostafa，Malik Magdon-Ismail 和林轩田三人写的那本 *Learning From Data*。这本书虽然不厚但是内容丰富，主要从理论角度介绍机器学习的相关概念。配合 youtube 上 Abu-Mostafa 教授在 Caltech 上课时的录像，可以作为不错的机器学习自学入门课程。这里把我的读书笔记发出来，大概到1月份发完。另外我可能会根据课程录像进行调整，一些地方会与书上内容不一致。
 
 ## Intro
