@@ -19,6 +19,7 @@ task :post, :title do |t, args|
     title: #{title}
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
     categories:
+    enable_mermaid:
     ---
 
     EOS
@@ -46,6 +47,7 @@ task :draft, :title do |t, args|
     title: #{title}
     date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
     categories:
+    enable_mermaid:
     ---
 
     EOS
@@ -53,13 +55,6 @@ task :draft, :title do |t, args|
 
 # Uncomment the line below if you want the draft to automatically open in your default text editor
 # system ("#{ENV['EDITOR']} #{filename}")
-end
-
-desc 'preview the site with drafts'
-task :preview do
-  puts "## Generating site"
-  puts "## Stop with ^C ( <CTRL>+C )"
-  system "jekyll serve --watch --drafts"
 end
 
 desc 'list tasks'

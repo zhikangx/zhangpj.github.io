@@ -37,6 +37,12 @@
   </script>
   {% endif %}
 
+  {% if page.enable_mermaid %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/6.0.0/mermaid.forest.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/6.0.0/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+  {% endif %}
+
   <!-- Open Graph -->
   <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
   <meta property="og:locale" content="{{ site.text.og_locale }}">
