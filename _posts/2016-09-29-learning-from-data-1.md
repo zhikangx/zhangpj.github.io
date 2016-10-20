@@ -26,16 +26,15 @@ summary: 坂本真绫声音真好听。
 
 一家银行希望通过某种方法可以自动化其信用卡发放的流程。这家银行每天发放大量的信用卡，所以有大量申请人的历史信息。现在来了一位新的申请人，其个人信息如下：
 
-| Variable           | Value  |
-|-----------------------------|
-| age                | 23     |
-| gender             | male   |
-| annual salary      | $30000 |
-| years in residence | 1 year |
-| years in job       | 1 year |
-| current debt       | $15000 |
-| ...                | ...    |
-|=============================|
+| Variable           | Value   |
+|:-------------------|:--------|
+| age                | 23      |
+| gender             | male    |
+| annual salary      | $30,000 |
+| years in residence | 1 year  |
+| years in job       | 1 year  |
+| current debt       | $15,000 |
+| ...                | ...     |
 
 那么这家银行是否应该发放信用卡给他？
 
