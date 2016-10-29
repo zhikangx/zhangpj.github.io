@@ -2,7 +2,6 @@
 title:       HeArt
 email:       
 author:      zhangpj
-avatar:      "https://avatars2.githubusercontent.com/u/17241079?v=3&s=400"
 description: "zhangpj's personal blog."
 baseurl:     ""
 url:         "http://zhangpj.name"
@@ -11,7 +10,6 @@ date_format: "%b %-d, %Y"
 # Optional features
 animated:             false
 show_related_posts:   true
-show_post_footers:    true
 show_social_icons:    true
 enable_mathjax: true
 extended_fonts: true
